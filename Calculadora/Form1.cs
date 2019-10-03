@@ -16,5 +16,14 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            if (txtValor.Text == "0")
+                txtValor.Clear();
+
+            Button btn = (Button)sender;
+            txtValor.Text = txtValor.Text + btn.Text;
+        }
     }
 }
