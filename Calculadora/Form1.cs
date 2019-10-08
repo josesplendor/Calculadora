@@ -36,19 +36,19 @@ namespace Calculadora
             operacao = btn.Text;
             valor = Double.Parse(txtValor.Text);
             op_escolhida = true;
-            conta.Text = valor + " " + operacao;
+            txtConta.Text = valor + " " + operacao;
         }
 
         private void btnc_Click(object sender, EventArgs e)
         {
             txtValor.Text = "0";
-            conta.Text = "";
+            txtConta.Text = "";
             valor = 0;
         }
 
         private void btnigual_Click(object sender, EventArgs e)
         {
-            conta.Text = "";
+            txtConta.Text = "";
             switch (operacao)
             {
                 case "+":
@@ -77,3 +77,4 @@ namespace Calculadora
         }
     }
 }
+

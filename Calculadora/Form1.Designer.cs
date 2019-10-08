@@ -48,6 +48,7 @@
             this.txtValor = new System.Windows.Forms.TextBox();
             this.conta = new System.Windows.Forms.Label();
             this.btnporcent = new System.Windows.Forms.Button();
+            this.txtConta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn7
@@ -268,11 +269,23 @@
             this.btnporcent.UseVisualStyleBackColor = true;
             this.btnporcent.Click += new System.EventHandler(this.operacao_Click);
             // 
+            // txtConta
+            // 
+            this.txtConta.AutoSize = true;
+            this.txtConta.BackColor = System.Drawing.Color.White;
+            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConta.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtConta.Location = new System.Drawing.Point(18, 16);
+            this.txtConta.Name = "txtConta";
+            this.txtConta.Size = new System.Drawing.Size(0, 24);
+            this.txtConta.TabIndex = 20;
+            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 303);
+            this.Controls.Add(this.txtConta);
             this.Controls.Add(this.btnporcent);
             this.Controls.Add(this.conta);
             this.Controls.Add(this.txtValor);
@@ -326,6 +339,7 @@
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label conta;
         private System.Windows.Forms.Button btnporcent;
+        private System.Windows.Forms.Label txtConta;
     }
 }
 
